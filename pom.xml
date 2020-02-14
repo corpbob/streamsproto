@@ -46,7 +46,7 @@
 		to build a jar file out of this project!
 	-->
   <build>
-    <finalName>app.jar</finalName>
+    <finalName>app</finalName>
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
