@@ -64,7 +64,7 @@
           <finalName>app</finalName>
           <archive>
             <manifest>
-              <mainClass>com.example.streamproto.Pipe</mainClass>
+              <mainClass>com.example.streamproto.KafkaClient</mainClass>
             </manifest>
           </archive>
           <descriptorRefs>
