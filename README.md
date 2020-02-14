@@ -1,5 +1,6 @@
 # Create a kafka topic called my-topic. Change the name to suite your requirements. 
 
+```
 cat <<EOF|oc create -f -
 apiVersion: kafka.strimzi.io/v1alpha1
 kind: KafkaTopic
@@ -11,6 +12,7 @@ spec:
  partitions: 3
  replicas: 3
 EOF
+```
 
 - Extract the CA certs to enable TLS
 
