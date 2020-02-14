@@ -148,6 +148,7 @@ public class KafkaClient {
 		props.put("value.serializer", "org.apache.kafka.common.serialization.StringSerializer");
 		if (null != trustStore) {
 			props.put("ssl.truststore.location", trustStore);
+			props.put("security.protocol","SSL");
 		}
 
 		if (null != trustStorePassword) {
