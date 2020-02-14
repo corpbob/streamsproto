@@ -46,7 +46,6 @@
 		to build a jar file out of this project!
 	-->
   <build>
-    <finalName>app</finalName>
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
@@ -62,6 +61,7 @@
         <artifactId>maven-assembly-plugin</artifactId>
         <version>3.1.1</version>
         <configuration>
+          <finalName>app</finalName>
           <archive>
             <manifest>
               <mainClass>com.example.streamproto.Pipe</mainClass>
@@ -70,6 +70,7 @@
           <descriptorRefs>
             <descriptorRef>jar-with-dependencies</descriptorRef>
           </descriptorRefs>
+          <appendAssemblyId>false</appendAssemblyId>
         </configuration>
         <executions>
           <execution>
